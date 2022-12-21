@@ -24,7 +24,7 @@ namespace Institute_Search.Controllers
         }
 
         [HttpPost]
-        public IActionResult Search(/* you can change the parameters */ SearchFormModel query)
+        public IActionResult Search(/* you can change the parameters */ StudentSearchForm query)
         {
             // var result = Repo.......
             return View(/* result */);
