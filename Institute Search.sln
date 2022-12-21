@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Institute Search", "Institute Search\Institute Search.csproj", "{4A5A1DA9-0757-4AEF-9275-37A1F63C08AD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ test", "LINQ-test\LINQ test.csproj", "{77183B71-6D5A-4A03-B717-556A162137D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4A5A1DA9-0757-4AEF-9275-37A1F63C08AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A5A1DA9-0757-4AEF-9275-37A1F63C08AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A5A1DA9-0757-4AEF-9275-37A1F63C08AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77183B71-6D5A-4A03-B717-556A162137D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77183B71-6D5A-4A03-B717-556A162137D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77183B71-6D5A-4A03-B717-556A162137D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77183B71-6D5A-4A03-B717-556A162137D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
