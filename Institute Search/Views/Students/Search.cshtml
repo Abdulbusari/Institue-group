@@ -1,2 +1,26 @@
-﻿@model StudentSearchForm
+﻿
 
+@model StudentID
+
+
+<form method="post">
+
+    <div class="col-md-4">
+        <label asp-for="range" class="form-label"></label>
+        <input type="text" asp-for="range" placeholder=">100 or <100 or 100-200">
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="name" class="form-label"></label>
+        <input type="text" asp-for="name" placeholder="Enter a Name or Letters to find">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@if(Model.results != null)
+{
+    @foreach(var s in Model.results)
+    {
+        <p>@s.FirstName @s.LastName, @s.Id</p>
+    }
+}
