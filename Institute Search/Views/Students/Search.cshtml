@@ -14,6 +14,25 @@
         <label asp-for="name" class="form-label"></label>
         <input type="text" asp-for="name" placeholder="Enter a Name or Letters to find">
     </div>
+
+    <div class="col-md-4">
+        <label asp-for="nation" class="form-label"></label>
+        <input type="text" asp-for="nation" placeholder="Canada, Usa">
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="grade" class="form-label"></label>
+        <input type="text" asp-for="grade" placeholder="11, 12">
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="course" class="form-label"></label>
+        <input type="text" asp-for="course" placeholder="Math Physics">
+        <br />
+        <label asp-for="intersectionMode" class="form-label"></label>
+        <input type="checkbox" asp-for="intersectionMode" />
+    </div> 
+
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
@@ -21,6 +40,18 @@
 {
     @foreach(var s in Model.results)
     {
-        <p>@s.FirstName @s.LastName, @s.Id</p>
+        <p>@s.FirstName @s.LastName</p>
+        <p>@s.Id</p>
+        <p>@s.Nationality</p>
+        <p>@s.GradeYear</p>
+        <p>-------------------------</p>
+        <ul>
+            @foreach(var cs in s.ClassroomStudents)
+            {
+                <li>@cs.Classroom.Course.Name</li>
+            }
+        </ul>
+        <p>-------------------------------------</p>
     }
+
 }
